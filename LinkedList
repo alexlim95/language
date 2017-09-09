@@ -28,11 +28,12 @@ int main()
 	int number = 0;
 
 	// keeps asking for user input to append to linked list until a -1 is entered
-	while(number != -1)
+	while(1)
 	{
 		printf("Enter element to append to head (-1 to end): \n");
-		scanf("%d", &number);									// user input for number
-		append_Head(number);									// passes input and appends to head
+		scanf("%d", &number);						// user input for number
+		if(number == -1) return 0;
+		else append_Head(number);					// passes input and appends to head
 	}
 	return 0;		// ends program
 }
