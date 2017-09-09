@@ -13,7 +13,7 @@
 
 // the type for the node that makes up the body of the list
 struct node {
-	int data;				// data
+	int data;			// data
 	struct node *next;		// node pointer
 };
 
@@ -22,7 +22,6 @@ struct node *head = NULL;
 
 // declare functions
 void append_Head(int element);
-//void printList();
 
 int main()
 {
